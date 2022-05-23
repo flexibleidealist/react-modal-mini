@@ -7,10 +7,10 @@ function App() {
 
   return (
     <div className="App">
-      {showModal && <Modal setShowModal={setShowModal} />}
       <button onClick={() => setShowModal(!showModal)}>
         {showModal ? 'close' : 'open'}
       </button>
+      {showModal && <Modal setShowModal={setShowModal} />}
     </div>
   );
 }
